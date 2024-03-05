@@ -13,13 +13,13 @@ body {
 }
 
 .navigation_menu a {
-    color: #333; /* Color for the link text */
+    color: #333; 
     text-decoration: none;
 }
 
 .navigation_menu .right-side a:hover,
 .navigation_menu .right-side a.active {
-    color: #007bff; /* Color for the link text on hover and active */
+    color: #007bff; 
 }
 
 .left-side {
@@ -84,6 +84,7 @@ body {
 .text {
     max-width: 50%;
     padding-bottom: 40px;
+    padding-left: 50px;
     color: #fff;
 }
 
@@ -96,9 +97,10 @@ body {
 }
 
 .image img {
-    max-width: 100%;
-    padding-top: 25px;
-    padding-right: 100px;
+    max-width: 50%;
+    padding-top: 5px;
+    padding-right: 150px;
+    float: right;
 }
 
 
@@ -131,13 +133,13 @@ body {
 }
 
 .about_content a {
-    color: #000; /* Color for the link text */
+    color: #000; 
     text-decoration: none;
     position: relative;
 }
 
 .about_content a:hover {
-    color: #007bff; /* Color for the link text on hover */
+    color: #007bff; 
 }
 
 .about_content a:after {
@@ -145,7 +147,7 @@ body {
     display: block;
     width: 0;
     height: 1px;
-    background: #007bff; /* Color for the underline */
+    background: #007bff; 
     transition: width 0.3s;
     position: absolute;
     bottom: -2px;
@@ -265,16 +267,26 @@ body {
     color: rgb(82, 82, 82);
 }
 
-.inf132_image {
-    margin-top: 20px;
+.project {
+    margin-bottom: 20px;
 }
 
-.inf132_image img {
-    max-width: 50%; /* Make the image responsive */
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.project img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.images-container {
+    display: flex; 
+}
+
+.images-container > div {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.images-container > div:last-child {
+    margin-right: 0;
 }
 
 /* Contact - Content */
