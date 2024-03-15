@@ -1,0 +1,223 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0; 
+}
+
+/* Navigation Menu */
+.navigation_menu {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-top: 20px;
+}
+
+.navigation_menu a {
+    color: #333; 
+    text-decoration: none;
+}
+
+.navigation_menu .right-side a:hover,
+.navigation_menu .right-side a.active {
+    color: #007bff; 
+}
+
+.left-side {
+    font-size: 38px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    padding-left: 50px; 
+}
+
+.left-side img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.left-side a {
+    color: #000;
+    text-decoration: none;
+}
+
+.left-side a:active {
+    color: #007bff;
+}
+
+.right-side ul {
+    list-style: none;
+    display: flex;
+    padding-right: 50px; 
+}
+
+.right-side ul li {
+    margin-left: 26px; 
+}
+
+.right-side ul li a {
+    color: #000;
+    text-decoration: none; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+}
+
+.right-side ul li a:active {
+    color: #007bff;
+}
+
+/* Desogn Project - Content */
+.design_content {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold; 
+    font-size: 50px;
+    border: 1px solid #000;
+    border-color: #f0f0f0;
+    border-radius: 15px;
+    padding: 50px; 
+    margin-top: 20px;
+    width: 75%;
+    align-content: center;
+    margin-left: auto;  
+    margin-right: auto; 
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.design_project_heading {
+    text-align: center;
+}
+
+.design_project_heading p {
+    margin: 0; 
+}
+
+.contributors {
+    text-align: center;
+}
+
+.contributors p {
+    margin: 0; 
+}
+
+.design_content h1 {
+    display: flex;
+    font-size: 50px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.design_content h2 {
+    font-size: 42px;
+    margin-bottom: 30px; 
+}
+
+.design_content h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.design_content h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.design_content p {
+    font-size: 24px;
+    color: rgb(82, 82, 82);
+}
+
+div[table_of_contents] {
+    font-size: 24px;
+}
+
+div[table_of_contents] ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+div[table_of_contents] ul li {
+    margin-bottom: 5px;
+}
+
+div[table_of_contents] a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+div[table_of_contents] a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #007bff; 
+    margin: 20px 0; 
+    height: 2px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    transition: background-color 0.3s;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.button:hover {
+    display: flex;
+    background-color: #0056b3;
+}
+
+.image {
+    width: 900px; 
+    margin-right: 0 auto 20px; 
+}
+
+.image img {
+    width: 100%; 
+    height: auto; 
+}
+
+
+/* Footer */
+.footer {
+    padding-left: 150px;
+    padding-right: 150px; 
+    padding-top: 50px;
+    padding-bottom: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: gray;
+}
+
+.footer_text,
+.socials {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Socials */
+.socials {
+    float: right;
+    list-style-type: none;
+    margin: -20px;
+    padding: 0px;
+}
+
+.socials li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.socials a {
+    text-decoration: none;
+    font-size: 45px;
+    color: rgb(128, 128, 128);
+}

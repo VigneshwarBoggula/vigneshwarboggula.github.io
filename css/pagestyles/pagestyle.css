@@ -68,97 +68,7 @@ body {
 }
 
 
-/* Index - Home - Content */
-.home_content {
-    background-color: #1b1b1b;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 100px;
-    padding-bottom: 15px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-}
-
-.text {
-    max-width: 50%;
-    padding-bottom: 40px;
-    padding-left: 50px;
-    color: #fff;
-}
-
-.text p.hello {
-    font-size: 75px;
-}
-
-.text p {
-    font-size: 24px;
-}
-
-.image img {
-    max-width: 50%;
-    padding-top: 5px;
-    padding-right: 150px;
-    float: right;
-}
-
-
-/* Index - About - Content */
-.about_content {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold; 
-    font-size: 50px;
-    border: 1px solid #000;
-    border-color: #f0f0f0;
-    border-radius: 15px;
-    padding: 50px; 
-    margin-top: 20px;
-    width: 75%;
-    align-content: center;
-    margin-left: auto;  
-    margin-right: auto; 
-    margin-top: 60px;
-    background-color: #fff; 
-}   
-
-.about_content h2 {
-    font-size: 36px;
-    margin-bottom: 30px; 
-}
-
-.about_content p {
-    font-size: 24px;
-    color: rgb(82, 82, 82);
-}
-
-.about_content a {
-    color: #000; 
-    text-decoration: none;
-    position: relative;
-}
-
-.about_content a:hover {
-    color: #007bff; 
-}
-
-.about_content a:after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 1px;
-    background: #007bff; 
-    transition: width 0.3s;
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-}
-
-.about_content a:hover:after {
-    width: 100%;
-}
-
-/* Resume - Content */
+/* Resume Page */
 .resume_content {
     font-family: 'Poppins', sans-serif;
     font-weight: bold; 
@@ -172,12 +82,16 @@ body {
     align-content: center;
     margin-left: auto;  
     margin-right: auto; 
-    background-color: #fff; 
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .resume_content h1 {
+    display: flex;
     font-size: 42px;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 .resume_content h2 {
@@ -195,6 +109,7 @@ body {
     display: inline-block;
     padding: 10px 20px;
     background-color: #007bff;
+    transition: background-color 0.3s;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -202,94 +117,19 @@ body {
     margin-bottom: 20px;
 }
 
-
-/* Software - Content */
-.software_content {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold; 
-    font-size: 50px;
-    border: 1px solid #000;
-    border-color: #f0f0f0;
-    border-radius: 15px;
-    padding: 50px; 
-    margin-top: 20px;
-    width: 75%;
-    align-content: center;
-    margin-left: auto;  
-    margin-right: auto; 
-    background-color: #fff; 
+.download_resume a:hover {
+    background-color: #0056b3;
 }
 
-.software_content h1 {
-    font-size: 42px;
-    margin-bottom: 30px; 
+hr {
+    border: none;
+    height: 1px;
+    background-color: #007bff; 
+    margin: 20px 0; 
+    height: 2px;
 }
 
-.software_content h2 {
-    font-size: 36px;
-    margin-bottom: 30px; 
-}
-
-.software_content p {
-    font-size: 24px;
-    color: rgb(82, 82, 82);
-}
-
-/* Design - Content */
-.design_content {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold; 
-    font-size: 50px;
-    border: 1px solid #000;
-    border-color: #f0f0f0;
-    border-radius: 15px;
-    padding: 50px; 
-    margin-top: 20px;
-    width: 75%;
-    align-content: center;
-    margin-left: auto;  
-    margin-right: auto; 
-    background-color: #fff; 
-}
-
-.design_content h1 {
-    font-size: 42px;
-    margin-bottom: 30px; 
-}
-
-.design_content h2 {
-    font-size: 36px;
-    margin-bottom: 30px; 
-}
-
-.design_content p {
-    font-size: 24px;
-    color: rgb(82, 82, 82);
-}
-
-.project {
-    margin-bottom: 20px;
-}
-
-.project img {
-    max-width: 100%;
-    display: inline-block;
-}
-
-.images-container {
-    display: flex; 
-}
-
-.images-container > div {
-    flex: 1;
-    margin-right: 10px;
-}
-
-.images-container > div:last-child {
-    margin-right: 0;
-}
-
-/* Contact - Content */
+/* Contact Page */
 .contact_content {
     font-family: 'Poppins', sans-serif;
     font-weight: bold; 
@@ -306,6 +146,7 @@ body {
     background-color: #fff;
     text-align: center;
     margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact_content h1 {
@@ -345,12 +186,21 @@ body {
 .contact_content form .submit-button {
     padding: 8px 10px;
     font-size: 18px;
-    border: 3px solid #dcdcdc;
+    border: none;
+    background-color: #007bff;
+    transition: background-color 0.3s;
     border-radius: 5px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    color: rgb(82, 82, 82);
+    color: #fff;
+    width: 10%;
+    height: 2%
 }
+
+.contact_content form .submit-button:hover {
+    background-color: #0056b3;
+}
+
 
 /* Footer */
 .footer {
