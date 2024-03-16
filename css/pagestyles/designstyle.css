@@ -67,7 +67,7 @@ body {
     color: #007bff;
 }
 
-/* Desogn Project - Content */
+/* Design Project - Content */
 .design_content {
     font-family: 'Poppins', sans-serif;
     font-weight: bold; 
@@ -170,7 +170,7 @@ hr {
 }
 
 .button:hover {
-    display: flex;
+    display: inline-block;
     background-color: #0056b3;
 }
 
